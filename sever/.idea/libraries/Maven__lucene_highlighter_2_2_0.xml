@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Maven: lucene:highlighter:2.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/lucene/lucene-highlighter.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,654 @@
+2013-09-20 16:40:20,609 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 16:40:20,913 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 16:40:21,137 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 16:40:22,494 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@1124746: startup date [Fri Sep 20 16:40:22 CST 2013]; root of context hierarchy>
+2013-09-20 16:40:22,974 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 16:40:22,981 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c2896: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 16:40:23,000 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@152853d] to prepare test instance [com.bupt.pcncad.CreateIndexTest@a974c7]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 22 more
+2013-09-20 20:41:01,968 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 20:41:02,352 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:41:02,919 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:41:04,392 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@383118: startup date [Fri Sep 20 20:41:04 CST 2013]; root of context hierarchy>
+2013-09-20 20:41:04,904 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:41:04,919 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@30d83d: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:41:04,939 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@140b8fd] to prepare test instance [com.bupt.pcncad.CreateIndexTest@30fc1f]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 22 more
+2013-09-20 20:41:34,535 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 20:41:34,706 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:41:34,873 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:41:35,219 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@1124746: startup date [Fri Sep 20 20:41:35 CST 2013]; root of context hierarchy>
+2013-09-20 20:41:35,456 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:41:35,463 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c2896: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:41:35,474 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@152853d] to prepare test instance [com.bupt.pcncad.CreateIndexTest@a974c7]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 22 more
+2013-09-20 20:43:09,099 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 20:43:09,278 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:43:09,435 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:43:09,744 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@81a197: startup date [Fri Sep 20 20:43:09 CST 2013]; root of context hierarchy>
+2013-09-20 20:43:09,988 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:43:09,995 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18e899c: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:43:10,006 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@f6398] to prepare test instance [com.bupt.pcncad.CreateIndexTest@53a9d5]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runners.Suite.runChild(Suite.java:115)
+	at org.junit.runners.Suite.runChild(Suite.java:23)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 30 more
+2013-09-20 20:43:21,750 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 20:43:21,921 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:43:22,066 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:43:22,366 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@716cb7: startup date [Fri Sep 20 20:43:22 CST 2013]; root of context hierarchy>
+2013-09-20 20:43:22,615 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:43:22,621 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1e2c841: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:43:22,633 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@b2e752] to prepare test instance [com.bupt.pcncad.CreateIndexTest@170ec24]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runners.Suite.runChild(Suite.java:115)
+	at org.junit.runners.Suite.runChild(Suite.java:23)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 30 more
+2013-09-20 20:43:30,863 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 20:43:31,053 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:43:31,195 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:43:31,496 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@648016: startup date [Fri Sep 20 20:43:31 CST 2013]; root of context hierarchy>
+2013-09-20 20:43:31,741 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:43:31,748 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1dd7736: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:43:31,759 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@170ec24] to prepare test instance [com.bupt.pcncad.CreateIndexTest@9f3e95]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runners.Suite.runChild(Suite.java:115)
+	at org.junit.runners.Suite.runChild(Suite.java:23)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 30 more
+2013-09-20 20:52:45,057 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 20:52:45,234 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:52:45,415 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:52:45,763 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@e29820: startup date [Fri Sep 20 20:52:45 CST 2013]; root of context hierarchy>
+2013-09-20 20:52:45,997 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:52:46,004 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ec8784: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:52:46,015 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1a631cc] to prepare test instance [com.bupt.pcncad.CreateIndexTest@f6398]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runners.Suite.runChild(Suite.java:115)
+	at org.junit.runners.Suite.runChild(Suite.java:23)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 30 more
+2013-09-20 20:53:23,555 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 20:53:23,740 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:53:23,897 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:53:24,210 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@118d189: startup date [Fri Sep 20 20:53:24 CST 2013]; root of context hierarchy>
+2013-09-20 20:53:24,465 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:53:24,471 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1dd7736: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:53:24,482 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@170ec24] to prepare test instance [com.bupt.pcncad.CreateIndexTest@9f3e95]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runners.Suite.runChild(Suite.java:115)
+	at org.junit.runners.Suite.runChild(Suite.java:23)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 30 more
+2013-09-20 20:53:33,244 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 20:53:33,425 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:53:33,571 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:53:33,884 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@716cb7: startup date [Fri Sep 20 20:53:33 CST 2013]; root of context hierarchy>
+2013-09-20 20:53:34,138 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:53:34,145 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@ec8784: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:53:34,158 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1a631cc] to prepare test instance [com.bupt.pcncad.CreateIndexTest@f6398]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runners.Suite.runChild(Suite.java:115)
+	at org.junit.runners.Suite.runChild(Suite.java:23)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 30 more
+2013-09-20 20:56:38,926 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.TestDao]: using defaults.>
+2013-09-20 20:56:39,089 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:56:39,236 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:56:39,534 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@1a19458: startup date [Fri Sep 20 20:56:39 CST 2013]; root of context hierarchy>
+2013-09-20 20:56:39,803 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:56:39,810 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@dccfab: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:56:39,821 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@a974c7] to prepare test instance [com.bupt.pcncad.TestDao@131f2b4]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 22 more
+2013-09-20 20:57:34,676 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.TestDao]: using defaults.>
+2013-09-20 20:57:34,845 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 20:57:34,989 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 20:57:35,292 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@1124746: startup date [Fri Sep 20 20:57:35 CST 2013]; root of context hierarchy>
+2013-09-20 20:57:35,556 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 20:57:35,564 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6c2896: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 20:57:35,574 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@152853d] to prepare test instance [com.bupt.pcncad.TestDao@a974c7]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 22 more
+2013-09-20 21:02:47,688 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.TestDao]: using defaults.>
+2013-09-20 21:02:47,872 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 21:02:48,026 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 21:02:48,336 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 21:02:48,367 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:02:48,373 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'sessionFactory': replacing [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:02:48,379 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txManager': replacing [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:02:48,388 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txAdvice': replacing [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-09-20 21:02:48,397 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'brServiceOperation': replacing [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-09-20 21:02:48,402 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'annotationConfiguration': replacing [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:02:48,410 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compass': replacing [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:02:48,417 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'hibernateGpsDevice': replacing [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:02:48,426 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassGps': replacing [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:02:48,431 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassTemplate': replacing [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:02:48,447 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@e29820: startup date [Fri Sep 20 21:02:48 CST 2013]; root of context hierarchy>
+2013-09-20 21:02:48,775 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 21:02:48,792 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@14bc4e6: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 21:02:48,821 ERROR [org.springframework.test.context.TestContextManager] - <Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1ba1d9] to prepare test instance [com.bupt.pcncad.TestDao@1ed7ac]>
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:157)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:321)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:290)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:46)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174)
+	at org.junit.runners.Suite.runChild(Suite.java:115)
+	at org.junit.runners.Suite.runChild(Suite.java:23)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:180)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:41)
+	at org.junit.runners.ParentRunner$1.evaluate(ParentRunner.java:173)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:31)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:220)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:76)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:195)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:63)
+Caused by: org.springframework.beans.factory.BeanDefinitionStoreException: Invalid bean definition with name 'compass' defined in class path resource [spring/applicationContext-db.xml]: Could not resolve placeholder 'basedir'
+	at org.springframework.beans.factory.config.PlaceholderConfigurerSupport.doProcessProperties(PlaceholderConfigurerSupport.java:209)
+	at org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.processProperties(PropertyPlaceholderConfigurer.java:220)
+	at org.springframework.beans.factory.config.PropertyResourceConfigurer.postProcessBeanFactory(PropertyResourceConfigurer.java:84)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:681)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:656)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:446)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:103)
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:1)
+	at org.springframework.test.context.support.DelegatingSmartContextLoader.loadContext(DelegatingSmartContextLoader.java:228)
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124)
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148)
+	... 30 more
+2013-09-20 21:09:45,315 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.TestDao]: using defaults.>
+2013-09-20 21:09:45,606 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 21:09:45,995 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 21:09:46,348 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 21:09:46,384 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:09:46,391 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'sessionFactory': replacing [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:09:46,398 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txManager': replacing [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:09:46,403 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txAdvice': replacing [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-09-20 21:09:46,411 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'brServiceOperation': replacing [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-09-20 21:09:46,415 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'annotationConfiguration': replacing [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:09:46,422 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compass': replacing [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:09:46,429 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'hibernateGpsDevice': replacing [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:09:46,436 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassGps': replacing [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:09:46,443 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassTemplate': replacing [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-09-20 21:09:46,454 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@7e8c4d: startup date [Fri Sep 20 21:09:46 CST 2013]; root of context hierarchy>
+2013-09-20 21:09:46,714 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 21:09:46,914 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a166bd: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 21:09:49,166 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Building new Hibernate SessionFactory>
+2013-09-20 21:09:52,435 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - <Using DataSource [org.apache.commons.dbcp.BasicDataSource@4e76b4] of Hibernate SessionFactory for HibernateTransactionManager>
+2013-09-20 21:09:52,720 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 21:10:01,879 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@7e8c4d: startup date [Fri Sep 20 21:09:46 CST 2013]; root of context hierarchy>
+2013-09-20 21:10:01,880 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@a166bd: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 21:10:01,902 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Closing Hibernate SessionFactory>
+2013-09-20 21:11:14,183 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 21:11:14,355 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 21:11:14,569 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 21:11:14,883 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@11f23e5: startup date [Fri Sep 20 21:11:14 CST 2013]; root of context hierarchy>
+2013-09-20 21:11:15,198 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 21:11:15,280 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c4afc4: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 21:11:16,405 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Building new Hibernate SessionFactory>
+2013-09-20 21:11:18,230 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - <Using DataSource [org.apache.commons.dbcp.BasicDataSource@19a12ee] of Hibernate SessionFactory for HibernateTransactionManager>
+2013-09-20 21:11:18,424 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 21:11:20,259 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@11f23e5: startup date [Fri Sep 20 21:11:14 CST 2013]; root of context hierarchy>
+2013-09-20 21:11:20,261 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@c4afc4: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 21:11:20,285 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Closing Hibernate SessionFactory>
+2013-09-20 21:12:20,294 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 21:12:20,470 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 21:12:20,639 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 21:12:20,943 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@6b496d: startup date [Fri Sep 20 21:12:20 CST 2013]; root of context hierarchy>
+2013-09-20 21:12:21,199 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 21:12:21,259 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16752c9: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 21:12:22,342 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Building new Hibernate SessionFactory>
+2013-09-20 21:12:24,084 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - <Using DataSource [org.apache.commons.dbcp.BasicDataSource@823618] of Hibernate SessionFactory for HibernateTransactionManager>
+2013-09-20 21:12:24,269 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 21:12:25,962 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@6b496d: startup date [Fri Sep 20 21:12:20 CST 2013]; root of context hierarchy>
+2013-09-20 21:12:25,964 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@16752c9: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 21:12:25,994 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Closing Hibernate SessionFactory>
+2013-09-20 23:41:08,431 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.CreateIndexTest]: using defaults.>
+2013-09-20 23:41:08,826 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-09-20 23:41:09,636 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-09-20 23:41:11,996 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@1a19458: startup date [Fri Sep 20 23:41:11 CST 2013]; root of context hierarchy>
+2013-09-20 23:41:12,618 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 23:41:12,839 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b2fb1e: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 23:41:15,043 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Building new Hibernate SessionFactory>
+2013-09-20 23:41:19,312 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - <Using DataSource [org.apache.commons.dbcp.BasicDataSource@18f1327] of Hibernate SessionFactory for HibernateTransactionManager>
+2013-09-20 23:41:19,582 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-09-20 23:41:44,229 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@1a19458: startup date [Fri Sep 20 23:41:11 CST 2013]; root of context hierarchy>
+2013-09-20 23:41:44,231 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@b2fb1e: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-09-20 23:41:44,264 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Closing Hibernate SessionFactory>

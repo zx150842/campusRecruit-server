@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Maven: json:name:1.o">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/resources/json/json-name-1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

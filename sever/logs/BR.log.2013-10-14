@@ -1,0 +1,804 @@
+2013-10-14 17:14:12,313 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.TestDao]: using defaults.>
+2013-10-14 17:14:12,940 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-10-14 17:14:13,729 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-10-14 17:14:15,550 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-10-14 17:14:15,580 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:14:15,605 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'sessionFactory': replacing [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:14:15,627 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txManager': replacing [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:14:15,653 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txAdvice': replacing [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-10-14 17:14:15,663 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'brServiceOperation': replacing [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-10-14 17:14:15,670 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'annotationConfiguration': replacing [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:14:15,675 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compass': replacing [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:14:15,678 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'hibernateGpsDevice': replacing [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:14:15,683 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassGps': replacing [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:14:15,687 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassTemplate': replacing [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:14:15,712 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@1a19458: startup date [Mon Oct 14 17:14:15 CST 2013]; root of context hierarchy>
+2013-10-14 17:14:16,242 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-10-14 17:14:16,372 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1742dfe: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-10-14 17:14:17,353 INFO [org.hibernate.annotations.common.Version] - <Hibernate Commons Annotations 3.2.0.Final>
+2013-10-14 17:14:17,364 INFO [org.hibernate.cfg.Environment] - <Hibernate 3.6.9.Final>
+2013-10-14 17:14:17,367 INFO [org.hibernate.cfg.Environment] - <hibernate.properties not found>
+2013-10-14 17:14:17,372 INFO [org.hibernate.cfg.Environment] - <Bytecode provider name : javassist>
+2013-10-14 17:14:17,395 INFO [org.hibernate.cfg.Environment] - <using JDK 1.4 java.sql.Timestamp handling>
+2013-10-14 17:14:17,983 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSReply>
+2013-10-14 17:14:18,052 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSReply on table BBS_REPLY>
+2013-10-14 17:14:18,160 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSSection>
+2013-10-14 17:14:18,161 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSSection on table BBS_SECTION>
+2013-10-14 17:14:18,199 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSTopic>
+2013-10-14 17:14:18,200 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSTopic on table BBS_TOPIC>
+2013-10-14 17:14:18,209 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.CareerTalk>
+2013-10-14 17:14:18,210 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.CareerTalk on table CAREER_TALK>
+2013-10-14 17:14:18,214 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Company>
+2013-10-14 17:14:18,216 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Company on table COMPANY>
+2013-10-14 17:14:18,235 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Job>
+2013-10-14 17:14:18,236 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Job on table JOB>
+2013-10-14 17:14:18,242 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Major>
+2013-10-14 17:14:18,243 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Major on table MAJOR>
+2013-10-14 17:14:18,246 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Preference>
+2013-10-14 17:14:18,246 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Preference on table PREFERENCE>
+2013-10-14 17:14:18,254 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.PrivateLetter>
+2013-10-14 17:14:18,255 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.PrivateLetter on table PRIVATE_LETTER>
+2013-10-14 17:14:18,259 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.BYRSource>
+2013-10-14 17:14:18,259 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.BYRSource on table byrlist>
+2013-10-14 17:14:18,262 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.CTSource>
+2013-10-14 17:14:18,263 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.CTSource on table dajiexj>
+2013-10-14 17:14:18,266 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.DajieSource>
+2013-10-14 17:14:18,267 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.DajieSource on table dajielist>
+2013-10-14 17:14:18,271 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.ShuiMuBBSSource>
+2013-10-14 17:14:18,272 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.ShuiMuBBSSource on table qinghualist>
+2013-10-14 17:14:18,275 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Source>
+2013-10-14 17:14:18,275 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Source on table dajielist>
+2013-10-14 17:14:18,280 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.User>
+2013-10-14 17:14:18,280 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.User on table USER>
+2013-10-14 17:14:18,325 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.BBSTopic.replySet -> BBS_REPLY>
+2013-10-14 17:14:18,326 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.Major.userSet -> USER>
+2013-10-14 17:14:18,330 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.User.bbsReplySet -> BBS_REPLY>
+2013-10-14 17:14:18,338 INFO [org.hibernate.cfg.Configuration] - <Hibernate Validator not found: ignoring>
+2013-10-14 17:14:18,342 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Building new Hibernate SessionFactory>
+2013-10-14 17:14:18,360 INFO [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] - <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.>
+2013-10-14 17:14:18,374 INFO [org.hibernate.connection.ConnectionProviderFactory] - <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider>
+2013-10-14 17:14:20,866 INFO [org.hibernate.dialect.Dialect] - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2013-10-14 17:14:20,890 INFO [org.hibernate.engine.jdbc.JdbcSupportLoader] - <Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4>
+2013-10-14 17:14:20,891 INFO [org.hibernate.cfg.SettingsFactory] - <Database ->
+       name : MySQL
+    version : 5.1.61
+      major : 5
+      minor : 1>
+2013-10-14 17:14:20,891 INFO [org.hibernate.cfg.SettingsFactory] - <Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.9 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 1>
+2013-10-14 17:14:20,903 INFO [org.hibernate.transaction.TransactionFactoryFactory] - <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory>
+2013-10-14 17:14:20,906 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2013-10-14 17:14:20,907 INFO [org.hibernate.cfg.SettingsFactory] - <Automatic flush during beforeCompletion(): disabled>
+2013-10-14 17:14:20,907 INFO [org.hibernate.cfg.SettingsFactory] - <Automatic session close at end of transaction: disabled>
+2013-10-14 17:14:20,908 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC batch size: 50>
+2013-10-14 17:14:20,911 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC batch updates for versioned data: disabled>
+2013-10-14 17:14:20,913 INFO [org.hibernate.cfg.SettingsFactory] - <Scrollable result sets: enabled>
+2013-10-14 17:14:20,913 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC3 getGeneratedKeys(): enabled>
+2013-10-14 17:14:20,914 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC result set fetch size: 50>
+2013-10-14 17:14:20,914 INFO [org.hibernate.cfg.SettingsFactory] - <Connection release mode: auto>
+2013-10-14 17:14:20,921 INFO [org.hibernate.cfg.SettingsFactory] - <Maximum outer join fetch depth: 2>
+2013-10-14 17:14:20,921 INFO [org.hibernate.cfg.SettingsFactory] - <Default batch fetch size: 1>
+2013-10-14 17:14:20,922 INFO [org.hibernate.cfg.SettingsFactory] - <Generate SQL with comments: disabled>
+2013-10-14 17:14:20,922 INFO [org.hibernate.cfg.SettingsFactory] - <Order SQL updates by primary key: disabled>
+2013-10-14 17:14:20,923 INFO [org.hibernate.cfg.SettingsFactory] - <Order SQL inserts for batching: disabled>
+2013-10-14 17:14:20,924 INFO [org.hibernate.cfg.SettingsFactory] - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2013-10-14 17:14:20,931 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - <Using ASTQueryTranslatorFactory>
+2013-10-14 17:14:20,931 INFO [org.hibernate.cfg.SettingsFactory] - <Query language substitutions: {}>
+2013-10-14 17:14:20,932 INFO [org.hibernate.cfg.SettingsFactory] - <JPA-QL strict compliance: disabled>
+2013-10-14 17:14:20,932 INFO [org.hibernate.cfg.SettingsFactory] - <Second-level cache: enabled>
+2013-10-14 17:14:20,933 INFO [org.hibernate.cfg.SettingsFactory] - <Query cache: enabled>
+2013-10-14 17:14:20,950 INFO [org.hibernate.cfg.SettingsFactory] - <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge>
+2013-10-14 17:14:20,955 INFO [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2013-10-14 17:14:20,980 INFO [org.hibernate.cfg.SettingsFactory] - <Optimize cache for minimal puts: disabled>
+2013-10-14 17:14:20,981 INFO [org.hibernate.cfg.SettingsFactory] - <Structured second-level cache entries: disabled>
+2013-10-14 17:14:20,981 INFO [org.hibernate.cfg.SettingsFactory] - <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory>
+2013-10-14 17:14:20,989 INFO [org.hibernate.cfg.SettingsFactory] - <Statistics: disabled>
+2013-10-14 17:14:20,989 INFO [org.hibernate.cfg.SettingsFactory] - <Deleted entity synthetic identifier rollback: disabled>
+2013-10-14 17:14:20,990 INFO [org.hibernate.cfg.SettingsFactory] - <Default entity-mode: pojo>
+2013-10-14 17:14:20,990 INFO [org.hibernate.cfg.SettingsFactory] - <Named query checking : enabled>
+2013-10-14 17:14:20,991 INFO [org.hibernate.cfg.SettingsFactory] - <Check Nullability in Core (should be disabled when Bean Validation is on): disabled>
+2013-10-14 17:14:21,036 INFO [org.hibernate.impl.SessionFactoryImpl] - <building session factory>
+2013-10-14 17:14:21,046 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [blob] overrides previous : org.hibernate.type.BlobType@16a7c99>
+2013-10-14 17:14:21,047 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@16a7c99>
+2013-10-14 17:14:21,047 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@1a5d08>
+2013-10-14 17:14:21,048 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@d1c9b5>
+2013-10-14 17:14:21,050 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@111c3f0>
+2013-10-14 17:14:21,051 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@156f14c>
+2013-10-14 17:14:21,051 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [clob] overrides previous : org.hibernate.type.ClobType@fbd1fc>
+2013-10-14 17:14:21,052 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@fbd1fc>
+2013-10-14 17:14:21,053 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@973678>
+2013-10-14 17:14:21,139 WARN [net.sf.ehcache.config.ConfigurationFactory] - <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/zhang/.m2/repository/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar!/ehcache-failsafe.xml>
+2013-10-14 17:14:21,471 WARN [org.hibernate.id.UUIDHexGenerator] - <Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead>
+2013-10-14 17:14:22,067 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - <Not binding factory to JNDI, no JNDI name configured>
+2013-10-14 17:14:22,076 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <Running hbm2ddl schema update>
+2013-10-14 17:14:22,076 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <fetching database metadata>
+2013-10-14 17:14:22,081 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <updating schema>
+2013-10-14 17:14:22,123 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_REPLY>
+2013-10-14 17:14:22,124 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [content, id, user_name, last_modified, input_time, create_time, ref_reply_id, be_replied, author_id, topic_id]>
+2013-10-14 17:14:22,124 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkcf17e39e32ffe70b, fkcf17e39ea4f1a958]>
+2013-10-14 17:14:22,125 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkcf17e39e32ffe70b, fkcf17e39ea4f1a958, primary]>
+2013-10-14 17:14:22,149 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_SECTION>
+2013-10-14 17:14:22,150 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, company_id, topics, joins, input_time, clicks, admin_id, section_name]>
+2013-10-14 17:14:22,151 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk9cdfee99a1487ec7]>
+2013-10-14 17:14:22,151 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary, fk9cdfee99a1487ec7]>
+2013-10-14 17:14:22,182 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_TOPIC>
+2013-10-14 17:14:22,183 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [topic_body, last_reply_time, section_id, topic_title, id, user_name, topic_category, input_time, replies, clicks, delete_flag, author_id, created_time]>
+2013-10-14 17:14:22,184 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkcf389de334243e18, fkcf389de332ffe70b]>
+2013-10-14 17:14:22,185 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkcf389de334243e18, fkcf389de332ffe70b, primary]>
+2013-10-14 17:14:22,216 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.CAREER_TALK>
+2013-10-14 17:14:22,217 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [company_id, joins, school_name, source_from, url, career_time, id, career_talk_date, company_name, input_time, replies, clicks, place, topic_id]>
+2013-10-14 17:14:22,218 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk4f7a68cdcb6af809]>
+2013-10-14 17:14:22,218 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary, fk4f7a68cdcb6af809]>
+2013-10-14 17:14:22,246 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.COMPANY>
+2013-10-14 17:14:22,247 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [company_type, state, famous_company, section_id, state_time, id, company_name, input_time, company_rating, province, industry, company_scale, introduction]>
+2013-10-14 17:14:22,247 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,248 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:14:22,275 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.JOB>
+2013-10-14 17:14:22,275 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [img_url, table_form, company_id, joins, source_from, company_type, state, state_time, contact, url, id, company_name, input_time, job_name, description, replies, delete_flag, clicks, created_time, industry, place, topic_id, statetime]>
+2013-10-14 17:14:22,277 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk11f9dcb6af809]>
+2013-10-14 17:14:22,279 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fk11f9dcb6af809, primary]>
+2013-10-14 17:14:22,299 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.MAJOR>
+2013-10-14 17:14:22,299 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, input_time, major_type, major_name]>
+2013-10-14 17:14:22,300 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,300 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:14:22,321 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.PREFERENCE>
+2013-10-14 17:14:22,321 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, source_from, input_time, company_type, province, notify_type, industry]>
+2013-10-14 17:14:22,322 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,322 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:14:22,341 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.PRIVATE_LETTER>
+2013-10-14 17:14:22,341 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [to_user_id, content, id, title, from_user_id, from_user_name, to_user_name, created_time]>
+2013-10-14 17:14:22,342 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,342 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:14:22,366 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.USER>
+2013-10-14 17:14:22,366 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [img_type, user_gender, last_read_topic, source_from, school_name, preference_id, nickname, last_read_letter, user_email, id, last_read_campus_recruit, user_name, last_read_career_talk, last_read_reply, input_time, major_id, user_password, user_id, introduction]>
+2013-10-14 17:14:22,367 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk27e3cbba32e20b, fk27e3cb874bae49]>
+2013-10-14 17:14:22,371 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fk27e3cbba32e20b, primary, fk27e3cb874bae49]>
+2013-10-14 17:14:22,391 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.USER_BBS_SECTION>
+2013-10-14 17:14:22,391 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [section_id, user_id]>
+2013-10-14 17:14:22,392 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkc61dd825d246f4cb, fkc61dd82534243e18]>
+2013-10-14 17:14:22,392 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkc61dd825d246f4cb, primary, fkc61dd82534243e18]>
+2013-10-14 17:14:22,418 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.byrlist>
+2013-10-14 17:14:22,419 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [jobdetails, title, companyproperty, releasedate, pid, industry, insert_flag, url, city]>
+2013-10-14 17:14:22,420 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,420 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:14:22,447 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.dajielist>
+2013-10-14 17:14:22,447 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [form, companyproperty, state, pid, releasedate, isfresh, type, url, city, jobdetails, title, isfame, industry, imageurl, statetime]>
+2013-10-14 17:14:22,448 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,449 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:14:22,560 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.dajiexj>
+2013-10-14 17:14:22,561 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, time, title, school, local, date, insert_flag, url]>
+2013-10-14 17:14:22,561 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,562 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:14:22,583 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.qinghualist>
+2013-10-14 17:14:22,583 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [jobdetails, title, companyproperty, releasedate, pid, industry, insert_flag, url, city]>
+2013-10-14 17:14:22,584 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,585 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:14:22,609 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.hibernate_sequence>
+2013-10-14 17:14:22,610 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [next_val]>
+2013-10-14 17:14:22,610 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:14:22,610 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: []>
+2013-10-14 17:14:22,611 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <schema update complete>
+2013-10-14 17:14:22,627 INFO [org.hibernate.cache.UpdateTimestampsCache] - <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache>
+2013-10-14 17:14:22,637 WARN [org.hibernate.cache.EhCacheProvider] - <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.>
+2013-10-14 17:14:22,736 INFO [org.hibernate.cache.StandardQueryCache] - <starting query cache at region: org.hibernate.cache.StandardQueryCache>
+2013-10-14 17:14:22,737 WARN [org.hibernate.cache.EhCacheProvider] - <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.>
+2013-10-14 17:14:22,910 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - <Using DataSource [org.apache.commons.dbcp.BasicDataSource@139ebdb] of Hibernate SessionFactory for HibernateTransactionManager>
+2013-10-14 17:14:23,146 INFO [org.compass.core.config.CompassConfiguration] - <Mapping class [class com.bupt.pcncad.domain.Company]>
+2013-10-14 17:14:23,162 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-10-14 17:14:23,548 INFO [org.compass.core.lucene.engine.analyzer.LuceneAnalyzerManager] - <Building analyzer [MMAnalyzer]>
+2013-10-14 17:14:23,677 INFO [org.compass.core.lucene.engine.highlighter.LuceneHighlighterManager] - <Building highlighter [default]>
+2013-10-14 17:14:23,801 INFO [org.compass.core.lucene.engine.optimizer.LuceneSearchEngineOptimizerManager] - <Starting scheduled optimizer [class org.compass.core.lucene.engine.optimizer.DefaultLuceneSearchEngineOptimizer] with period [10000ms]>
+2013-10-14 17:14:23,803 INFO [org.compass.core.lucene.engine.manager.DefaultLuceneSearchEngineIndexManager] - <Starting scheduled index manager with period [60000ms]>
+2013-10-14 17:14:23,804 INFO [org.compass.core.lucene.engine.manager.IndexHoldersCache] - <Starting scheduled refresh cache with period [5000ms]>
+2013-10-14 17:14:36,576 INFO [org.compass.core.impl.DefaultCompass] - <Closing Compass [compass]>
+2013-10-14 17:14:36,576 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@1a19458: startup date [Mon Oct 14 17:14:15 CST 2013]; root of context hierarchy>
+2013-10-14 17:14:36,578 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1742dfe: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-10-14 17:14:36,583 INFO [org.compass.core.impl.DefaultCompass] - <Closed Compass [compass]>
+2013-10-14 17:14:36,629 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Closing Hibernate SessionFactory>
+2013-10-14 17:14:36,629 INFO [org.hibernate.impl.SessionFactoryImpl] - <closing>
+2013-10-14 17:16:52,016 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.TestDao]: using defaults.>
+2013-10-14 17:16:52,191 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-10-14 17:16:52,348 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-10-14 17:16:52,643 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-10-14 17:16:52,678 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:16:52,684 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'sessionFactory': replacing [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:16:52,693 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txManager': replacing [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:16:52,697 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txAdvice': replacing [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-10-14 17:16:52,704 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'brServiceOperation': replacing [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-10-14 17:16:52,708 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'annotationConfiguration': replacing [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:16:52,712 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compass': replacing [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:16:52,716 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'hibernateGpsDevice': replacing [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:16:52,720 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassGps': replacing [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:16:52,727 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassTemplate': replacing [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:16:52,738 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@1a19458: startup date [Mon Oct 14 17:16:52 CST 2013]; root of context hierarchy>
+2013-10-14 17:16:52,985 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-10-14 17:16:53,054 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@185fe0c: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-10-14 17:16:53,650 INFO [org.hibernate.annotations.common.Version] - <Hibernate Commons Annotations 3.2.0.Final>
+2013-10-14 17:16:53,657 INFO [org.hibernate.cfg.Environment] - <Hibernate 3.6.9.Final>
+2013-10-14 17:16:53,660 INFO [org.hibernate.cfg.Environment] - <hibernate.properties not found>
+2013-10-14 17:16:53,664 INFO [org.hibernate.cfg.Environment] - <Bytecode provider name : javassist>
+2013-10-14 17:16:53,669 INFO [org.hibernate.cfg.Environment] - <using JDK 1.4 java.sql.Timestamp handling>
+2013-10-14 17:16:53,858 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSReply>
+2013-10-14 17:16:53,916 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSReply on table BBS_REPLY>
+2013-10-14 17:16:53,994 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSSection>
+2013-10-14 17:16:53,995 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSSection on table BBS_SECTION>
+2013-10-14 17:16:54,034 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSTopic>
+2013-10-14 17:16:54,035 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSTopic on table BBS_TOPIC>
+2013-10-14 17:16:54,044 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.CareerTalk>
+2013-10-14 17:16:54,045 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.CareerTalk on table CAREER_TALK>
+2013-10-14 17:16:54,050 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Company>
+2013-10-14 17:16:54,050 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Company on table COMPANY>
+2013-10-14 17:16:54,068 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Job>
+2013-10-14 17:16:54,069 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Job on table JOB>
+2013-10-14 17:16:54,075 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Major>
+2013-10-14 17:16:54,076 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Major on table MAJOR>
+2013-10-14 17:16:54,079 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Preference>
+2013-10-14 17:16:54,080 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Preference on table PREFERENCE>
+2013-10-14 17:16:54,086 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.PrivateLetter>
+2013-10-14 17:16:54,087 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.PrivateLetter on table PRIVATE_LETTER>
+2013-10-14 17:16:54,092 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.BYRSource>
+2013-10-14 17:16:54,093 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.BYRSource on table byrlist>
+2013-10-14 17:16:54,097 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.CTSource>
+2013-10-14 17:16:54,098 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.CTSource on table dajiexj>
+2013-10-14 17:16:54,102 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.DajieSource>
+2013-10-14 17:16:54,102 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.DajieSource on table dajielist>
+2013-10-14 17:16:54,106 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.ShuiMuBBSSource>
+2013-10-14 17:16:54,108 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.ShuiMuBBSSource on table qinghualist>
+2013-10-14 17:16:54,111 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Source>
+2013-10-14 17:16:54,111 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Source on table dajielist>
+2013-10-14 17:16:54,116 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.User>
+2013-10-14 17:16:54,117 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.User on table USER>
+2013-10-14 17:16:54,143 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.BBSTopic.replySet -> BBS_REPLY>
+2013-10-14 17:16:54,144 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.Major.userSet -> USER>
+2013-10-14 17:16:54,148 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.User.bbsReplySet -> BBS_REPLY>
+2013-10-14 17:16:54,155 INFO [org.hibernate.cfg.Configuration] - <Hibernate Validator not found: ignoring>
+2013-10-14 17:16:54,159 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Building new Hibernate SessionFactory>
+2013-10-14 17:16:54,165 INFO [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] - <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.>
+2013-10-14 17:16:54,175 INFO [org.hibernate.connection.ConnectionProviderFactory] - <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider>
+2013-10-14 17:16:55,007 INFO [org.hibernate.dialect.Dialect] - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2013-10-14 17:16:55,020 INFO [org.hibernate.engine.jdbc.JdbcSupportLoader] - <Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4>
+2013-10-14 17:16:55,021 INFO [org.hibernate.cfg.SettingsFactory] - <Database ->
+       name : MySQL
+    version : 5.1.61
+      major : 5
+      minor : 1>
+2013-10-14 17:16:55,022 INFO [org.hibernate.cfg.SettingsFactory] - <Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.9 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 1>
+2013-10-14 17:16:55,027 INFO [org.hibernate.transaction.TransactionFactoryFactory] - <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory>
+2013-10-14 17:16:55,029 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2013-10-14 17:16:55,030 INFO [org.hibernate.cfg.SettingsFactory] - <Automatic flush during beforeCompletion(): disabled>
+2013-10-14 17:16:55,032 INFO [org.hibernate.cfg.SettingsFactory] - <Automatic session close at end of transaction: disabled>
+2013-10-14 17:16:55,033 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC batch size: 50>
+2013-10-14 17:16:55,033 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC batch updates for versioned data: disabled>
+2013-10-14 17:16:55,035 INFO [org.hibernate.cfg.SettingsFactory] - <Scrollable result sets: enabled>
+2013-10-14 17:16:55,035 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC3 getGeneratedKeys(): enabled>
+2013-10-14 17:16:55,036 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC result set fetch size: 50>
+2013-10-14 17:16:55,036 INFO [org.hibernate.cfg.SettingsFactory] - <Connection release mode: auto>
+2013-10-14 17:16:55,037 INFO [org.hibernate.cfg.SettingsFactory] - <Maximum outer join fetch depth: 2>
+2013-10-14 17:16:55,037 INFO [org.hibernate.cfg.SettingsFactory] - <Default batch fetch size: 1>
+2013-10-14 17:16:55,040 INFO [org.hibernate.cfg.SettingsFactory] - <Generate SQL with comments: disabled>
+2013-10-14 17:16:55,041 INFO [org.hibernate.cfg.SettingsFactory] - <Order SQL updates by primary key: disabled>
+2013-10-14 17:16:55,041 INFO [org.hibernate.cfg.SettingsFactory] - <Order SQL inserts for batching: disabled>
+2013-10-14 17:16:55,042 INFO [org.hibernate.cfg.SettingsFactory] - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2013-10-14 17:16:55,045 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - <Using ASTQueryTranslatorFactory>
+2013-10-14 17:16:55,045 INFO [org.hibernate.cfg.SettingsFactory] - <Query language substitutions: {}>
+2013-10-14 17:16:55,046 INFO [org.hibernate.cfg.SettingsFactory] - <JPA-QL strict compliance: disabled>
+2013-10-14 17:16:55,046 INFO [org.hibernate.cfg.SettingsFactory] - <Second-level cache: enabled>
+2013-10-14 17:16:55,047 INFO [org.hibernate.cfg.SettingsFactory] - <Query cache: enabled>
+2013-10-14 17:16:55,050 INFO [org.hibernate.cfg.SettingsFactory] - <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge>
+2013-10-14 17:16:55,054 INFO [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2013-10-14 17:16:55,058 INFO [org.hibernate.cfg.SettingsFactory] - <Optimize cache for minimal puts: disabled>
+2013-10-14 17:16:55,059 INFO [org.hibernate.cfg.SettingsFactory] - <Structured second-level cache entries: disabled>
+2013-10-14 17:16:55,059 INFO [org.hibernate.cfg.SettingsFactory] - <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory>
+2013-10-14 17:16:55,066 INFO [org.hibernate.cfg.SettingsFactory] - <Statistics: disabled>
+2013-10-14 17:16:55,066 INFO [org.hibernate.cfg.SettingsFactory] - <Deleted entity synthetic identifier rollback: disabled>
+2013-10-14 17:16:55,068 INFO [org.hibernate.cfg.SettingsFactory] - <Default entity-mode: pojo>
+2013-10-14 17:16:55,068 INFO [org.hibernate.cfg.SettingsFactory] - <Named query checking : enabled>
+2013-10-14 17:16:55,069 INFO [org.hibernate.cfg.SettingsFactory] - <Check Nullability in Core (should be disabled when Bean Validation is on): disabled>
+2013-10-14 17:16:55,089 INFO [org.hibernate.impl.SessionFactoryImpl] - <building session factory>
+2013-10-14 17:16:55,098 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1939100>
+2013-10-14 17:16:55,098 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@114d662>
+2013-10-14 17:16:55,099 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@106c6be>
+2013-10-14 17:16:55,102 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [blob] overrides previous : org.hibernate.type.BlobType@1e1e999>
+2013-10-14 17:16:55,103 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1e1e999>
+2013-10-14 17:16:55,104 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@af721d>
+2013-10-14 17:16:55,104 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [clob] overrides previous : org.hibernate.type.ClobType@6d06b0>
+2013-10-14 17:16:55,105 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@6d06b0>
+2013-10-14 17:16:55,106 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1d22ddb>
+2013-10-14 17:16:55,133 WARN [net.sf.ehcache.config.ConfigurationFactory] - <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/zhang/.m2/repository/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar!/ehcache-failsafe.xml>
+2013-10-14 17:16:55,286 WARN [org.hibernate.id.UUIDHexGenerator] - <Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead>
+2013-10-14 17:16:55,718 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - <Not binding factory to JNDI, no JNDI name configured>
+2013-10-14 17:16:55,725 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <Running hbm2ddl schema update>
+2013-10-14 17:16:55,726 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <fetching database metadata>
+2013-10-14 17:16:55,730 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <updating schema>
+2013-10-14 17:16:55,777 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_REPLY>
+2013-10-14 17:16:55,778 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [content, id, user_name, last_modified, input_time, create_time, ref_reply_id, be_replied, author_id, topic_id]>
+2013-10-14 17:16:55,779 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkcf17e39e32ffe70b, fkcf17e39ea4f1a958]>
+2013-10-14 17:16:55,779 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkcf17e39e32ffe70b, fkcf17e39ea4f1a958, primary]>
+2013-10-14 17:16:55,811 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_SECTION>
+2013-10-14 17:16:55,812 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, company_id, topics, joins, input_time, clicks, admin_id, section_name]>
+2013-10-14 17:16:55,812 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk9cdfee99a1487ec7]>
+2013-10-14 17:16:55,814 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary, fk9cdfee99a1487ec7]>
+2013-10-14 17:16:55,837 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_TOPIC>
+2013-10-14 17:16:55,837 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [topic_body, last_reply_time, section_id, topic_title, id, user_name, topic_category, input_time, replies, clicks, delete_flag, author_id, created_time]>
+2013-10-14 17:16:55,838 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkcf389de334243e18, fkcf389de332ffe70b]>
+2013-10-14 17:16:55,839 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkcf389de334243e18, fkcf389de332ffe70b, primary]>
+2013-10-14 17:16:55,860 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.CAREER_TALK>
+2013-10-14 17:16:55,860 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [company_id, joins, school_name, source_from, url, career_time, id, career_talk_date, company_name, input_time, replies, clicks, place, topic_id]>
+2013-10-14 17:16:55,862 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk4f7a68cdcb6af809]>
+2013-10-14 17:16:55,862 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary, fk4f7a68cdcb6af809]>
+2013-10-14 17:16:55,881 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.COMPANY>
+2013-10-14 17:16:55,882 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [company_type, state, famous_company, section_id, state_time, id, company_name, input_time, company_rating, province, industry, company_scale, introduction]>
+2013-10-14 17:16:55,883 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:55,883 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:16:55,905 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.JOB>
+2013-10-14 17:16:55,905 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [img_url, table_form, company_id, joins, source_from, company_type, state, state_time, contact, url, id, company_name, input_time, job_name, description, replies, delete_flag, clicks, created_time, industry, place, topic_id, statetime]>
+2013-10-14 17:16:55,907 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk11f9dcb6af809]>
+2013-10-14 17:16:55,910 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fk11f9dcb6af809, primary]>
+2013-10-14 17:16:55,927 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.MAJOR>
+2013-10-14 17:16:55,928 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, input_time, major_type, major_name]>
+2013-10-14 17:16:55,928 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:55,929 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:16:55,947 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.PREFERENCE>
+2013-10-14 17:16:55,948 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, source_from, input_time, company_type, province, notify_type, industry]>
+2013-10-14 17:16:55,948 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:55,949 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:16:55,967 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.PRIVATE_LETTER>
+2013-10-14 17:16:55,968 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [to_user_id, content, id, title, from_user_id, from_user_name, to_user_name, created_time]>
+2013-10-14 17:16:55,969 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:55,969 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:16:55,997 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.USER>
+2013-10-14 17:16:55,997 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [img_type, user_gender, last_read_topic, source_from, school_name, preference_id, nickname, last_read_letter, user_email, id, last_read_campus_recruit, user_name, last_read_career_talk, last_read_reply, input_time, major_id, user_password, user_id, introduction]>
+2013-10-14 17:16:55,999 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk27e3cbba32e20b, fk27e3cb874bae49]>
+2013-10-14 17:16:56,000 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fk27e3cbba32e20b, primary, fk27e3cb874bae49]>
+2013-10-14 17:16:56,027 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.USER_BBS_SECTION>
+2013-10-14 17:16:56,028 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [section_id, user_id]>
+2013-10-14 17:16:56,028 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkc61dd825d246f4cb, fkc61dd82534243e18]>
+2013-10-14 17:16:56,029 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkc61dd825d246f4cb, primary, fkc61dd82534243e18]>
+2013-10-14 17:16:56,052 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.byrlist>
+2013-10-14 17:16:56,053 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [jobdetails, title, companyproperty, releasedate, pid, industry, insert_flag, url, city]>
+2013-10-14 17:16:56,053 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:56,054 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:16:56,081 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.dajielist>
+2013-10-14 17:16:56,081 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [form, companyproperty, state, pid, releasedate, isfresh, type, url, city, jobdetails, title, isfame, industry, imageurl, statetime]>
+2013-10-14 17:16:56,082 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:56,082 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:16:56,104 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.dajiexj>
+2013-10-14 17:16:56,105 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, time, title, school, local, date, insert_flag, url]>
+2013-10-14 17:16:56,105 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:56,106 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:16:56,128 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.qinghualist>
+2013-10-14 17:16:56,129 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [jobdetails, title, companyproperty, releasedate, pid, industry, insert_flag, url, city]>
+2013-10-14 17:16:56,129 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:56,130 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:16:56,162 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.hibernate_sequence>
+2013-10-14 17:16:56,163 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [next_val]>
+2013-10-14 17:16:56,163 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:16:56,164 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: []>
+2013-10-14 17:16:56,164 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <schema update complete>
+2013-10-14 17:16:56,170 INFO [org.hibernate.cache.UpdateTimestampsCache] - <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache>
+2013-10-14 17:16:56,172 WARN [org.hibernate.cache.EhCacheProvider] - <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.>
+2013-10-14 17:16:56,332 INFO [org.hibernate.cache.StandardQueryCache] - <starting query cache at region: org.hibernate.cache.StandardQueryCache>
+2013-10-14 17:16:56,333 WARN [org.hibernate.cache.EhCacheProvider] - <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.>
+2013-10-14 17:16:56,475 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - <Using DataSource [org.apache.commons.dbcp.BasicDataSource@17db660] of Hibernate SessionFactory for HibernateTransactionManager>
+2013-10-14 17:16:56,676 INFO [org.compass.core.config.CompassConfiguration] - <Mapping class [class com.bupt.pcncad.domain.Company]>
+2013-10-14 17:16:56,691 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-10-14 17:16:56,916 INFO [org.compass.core.lucene.engine.analyzer.LuceneAnalyzerManager] - <Building analyzer [MMAnalyzer]>
+2013-10-14 17:16:56,979 INFO [org.compass.core.lucene.engine.highlighter.LuceneHighlighterManager] - <Building highlighter [default]>
+2013-10-14 17:16:57,032 INFO [org.compass.core.lucene.engine.optimizer.LuceneSearchEngineOptimizerManager] - <Starting scheduled optimizer [class org.compass.core.lucene.engine.optimizer.DefaultLuceneSearchEngineOptimizer] with period [10000ms]>
+2013-10-14 17:16:57,035 INFO [org.compass.core.lucene.engine.manager.DefaultLuceneSearchEngineIndexManager] - <Starting scheduled index manager with period [60000ms]>
+2013-10-14 17:16:57,036 INFO [org.compass.core.lucene.engine.manager.IndexHoldersCache] - <Starting scheduled refresh cache with period [5000ms]>
+2013-10-14 17:17:00,270 INFO [org.compass.core.impl.DefaultCompass] - <Closing Compass [compass]>
+2013-10-14 17:17:00,272 INFO [org.compass.core.impl.DefaultCompass] - <Closed Compass [compass]>
+2013-10-14 17:17:00,279 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@1a19458: startup date [Mon Oct 14 17:16:52 CST 2013]; root of context hierarchy>
+2013-10-14 17:17:00,280 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@185fe0c: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-10-14 17:17:00,309 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Closing Hibernate SessionFactory>
+2013-10-14 17:17:00,309 INFO [org.hibernate.impl.SessionFactoryImpl] - <closing>
+2013-10-14 17:34:33,418 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.TestDao]: using defaults.>
+2013-10-14 17:34:33,942 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-10-14 17:34:34,618 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-10-14 17:34:36,238 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-10-14 17:34:36,268 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:34:36,279 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'sessionFactory': replacing [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:34:36,287 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txManager': replacing [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:34:36,295 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txAdvice': replacing [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-10-14 17:34:36,301 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'brServiceOperation': replacing [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-10-14 17:34:36,305 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'annotationConfiguration': replacing [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:34:36,309 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compass': replacing [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:34:36,314 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'hibernateGpsDevice': replacing [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:34:36,321 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassGps': replacing [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:34:36,343 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassTemplate': replacing [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:34:36,374 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@16dc861: startup date [Mon Oct 14 17:34:36 CST 2013]; root of context hierarchy>
+2013-10-14 17:34:36,870 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-10-14 17:34:36,994 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9b59a2: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-10-14 17:34:38,007 INFO [org.hibernate.annotations.common.Version] - <Hibernate Commons Annotations 3.2.0.Final>
+2013-10-14 17:34:38,032 INFO [org.hibernate.cfg.Environment] - <Hibernate 3.6.9.Final>
+2013-10-14 17:34:38,035 INFO [org.hibernate.cfg.Environment] - <hibernate.properties not found>
+2013-10-14 17:34:38,041 INFO [org.hibernate.cfg.Environment] - <Bytecode provider name : javassist>
+2013-10-14 17:34:38,065 INFO [org.hibernate.cfg.Environment] - <using JDK 1.4 java.sql.Timestamp handling>
+2013-10-14 17:34:38,512 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSReply>
+2013-10-14 17:34:38,573 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSReply on table BBS_REPLY>
+2013-10-14 17:34:38,657 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSSection>
+2013-10-14 17:34:38,658 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSSection on table BBS_SECTION>
+2013-10-14 17:34:38,697 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSTopic>
+2013-10-14 17:34:38,698 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSTopic on table BBS_TOPIC>
+2013-10-14 17:34:38,707 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.CareerTalk>
+2013-10-14 17:34:38,708 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.CareerTalk on table CAREER_TALK>
+2013-10-14 17:34:38,713 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Company>
+2013-10-14 17:34:38,714 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Company on table COMPANY>
+2013-10-14 17:34:38,731 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Job>
+2013-10-14 17:34:38,732 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Job on table JOB>
+2013-10-14 17:34:38,738 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Major>
+2013-10-14 17:34:38,739 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Major on table MAJOR>
+2013-10-14 17:34:38,743 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Preference>
+2013-10-14 17:34:38,744 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Preference on table PREFERENCE>
+2013-10-14 17:34:38,751 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.PrivateLetter>
+2013-10-14 17:34:38,752 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.PrivateLetter on table PRIVATE_LETTER>
+2013-10-14 17:34:38,755 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.BYRSource>
+2013-10-14 17:34:38,756 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.BYRSource on table byrlist>
+2013-10-14 17:34:38,760 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.CTSource>
+2013-10-14 17:34:38,761 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.CTSource on table dajiexj>
+2013-10-14 17:34:38,763 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.DajieSource>
+2013-10-14 17:34:38,764 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.DajieSource on table dajielist>
+2013-10-14 17:34:38,768 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.ShuiMuBBSSource>
+2013-10-14 17:34:38,770 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.ShuiMuBBSSource on table qinghualist>
+2013-10-14 17:34:38,773 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Source>
+2013-10-14 17:34:38,773 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Source on table dajielist>
+2013-10-14 17:34:38,777 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.User>
+2013-10-14 17:34:38,778 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.User on table USER>
+2013-10-14 17:34:38,813 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.BBSTopic.replySet -> BBS_REPLY>
+2013-10-14 17:34:38,818 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.Major.userSet -> USER>
+2013-10-14 17:34:38,822 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.User.bbsReplySet -> BBS_REPLY>
+2013-10-14 17:34:38,831 INFO [org.hibernate.cfg.Configuration] - <Hibernate Validator not found: ignoring>
+2013-10-14 17:34:38,834 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Building new Hibernate SessionFactory>
+2013-10-14 17:34:38,864 INFO [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] - <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.>
+2013-10-14 17:34:38,895 INFO [org.hibernate.connection.ConnectionProviderFactory] - <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider>
+2013-10-14 17:34:39,580 INFO [org.hibernate.dialect.Dialect] - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2013-10-14 17:34:39,611 INFO [org.hibernate.engine.jdbc.JdbcSupportLoader] - <Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4>
+2013-10-14 17:34:39,611 INFO [org.hibernate.cfg.SettingsFactory] - <Database ->
+       name : MySQL
+    version : 5.1.61
+      major : 5
+      minor : 1>
+2013-10-14 17:34:39,612 INFO [org.hibernate.cfg.SettingsFactory] - <Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.9 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 1>
+2013-10-14 17:34:39,641 INFO [org.hibernate.transaction.TransactionFactoryFactory] - <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory>
+2013-10-14 17:34:39,643 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2013-10-14 17:34:39,644 INFO [org.hibernate.cfg.SettingsFactory] - <Automatic flush during beforeCompletion(): disabled>
+2013-10-14 17:34:39,645 INFO [org.hibernate.cfg.SettingsFactory] - <Automatic session close at end of transaction: disabled>
+2013-10-14 17:34:39,646 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC batch size: 50>
+2013-10-14 17:34:39,646 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC batch updates for versioned data: disabled>
+2013-10-14 17:34:39,647 INFO [org.hibernate.cfg.SettingsFactory] - <Scrollable result sets: enabled>
+2013-10-14 17:34:39,648 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC3 getGeneratedKeys(): enabled>
+2013-10-14 17:34:39,649 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC result set fetch size: 50>
+2013-10-14 17:34:39,649 INFO [org.hibernate.cfg.SettingsFactory] - <Connection release mode: auto>
+2013-10-14 17:34:39,667 INFO [org.hibernate.cfg.SettingsFactory] - <Maximum outer join fetch depth: 2>
+2013-10-14 17:34:39,667 INFO [org.hibernate.cfg.SettingsFactory] - <Default batch fetch size: 1>
+2013-10-14 17:34:39,668 INFO [org.hibernate.cfg.SettingsFactory] - <Generate SQL with comments: disabled>
+2013-10-14 17:34:39,668 INFO [org.hibernate.cfg.SettingsFactory] - <Order SQL updates by primary key: disabled>
+2013-10-14 17:34:39,669 INFO [org.hibernate.cfg.SettingsFactory] - <Order SQL inserts for batching: disabled>
+2013-10-14 17:34:39,671 INFO [org.hibernate.cfg.SettingsFactory] - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2013-10-14 17:34:39,711 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - <Using ASTQueryTranslatorFactory>
+2013-10-14 17:34:39,711 INFO [org.hibernate.cfg.SettingsFactory] - <Query language substitutions: {}>
+2013-10-14 17:34:39,712 INFO [org.hibernate.cfg.SettingsFactory] - <JPA-QL strict compliance: disabled>
+2013-10-14 17:34:39,712 INFO [org.hibernate.cfg.SettingsFactory] - <Second-level cache: enabled>
+2013-10-14 17:34:39,713 INFO [org.hibernate.cfg.SettingsFactory] - <Query cache: enabled>
+2013-10-14 17:34:39,715 INFO [org.hibernate.cfg.SettingsFactory] - <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge>
+2013-10-14 17:34:39,720 INFO [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2013-10-14 17:34:39,742 INFO [org.hibernate.cfg.SettingsFactory] - <Optimize cache for minimal puts: disabled>
+2013-10-14 17:34:39,742 INFO [org.hibernate.cfg.SettingsFactory] - <Structured second-level cache entries: disabled>
+2013-10-14 17:34:39,743 INFO [org.hibernate.cfg.SettingsFactory] - <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory>
+2013-10-14 17:34:39,750 INFO [org.hibernate.cfg.SettingsFactory] - <Statistics: disabled>
+2013-10-14 17:34:39,751 INFO [org.hibernate.cfg.SettingsFactory] - <Deleted entity synthetic identifier rollback: disabled>
+2013-10-14 17:34:39,751 INFO [org.hibernate.cfg.SettingsFactory] - <Default entity-mode: pojo>
+2013-10-14 17:34:39,752 INFO [org.hibernate.cfg.SettingsFactory] - <Named query checking : enabled>
+2013-10-14 17:34:39,752 INFO [org.hibernate.cfg.SettingsFactory] - <Check Nullability in Core (should be disabled when Bean Validation is on): disabled>
+2013-10-14 17:34:39,790 INFO [org.hibernate.impl.SessionFactoryImpl] - <building session factory>
+2013-10-14 17:34:39,799 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@6c9220>
+2013-10-14 17:34:39,800 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@1ed7524>
+2013-10-14 17:34:39,801 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@a5c9f1>
+2013-10-14 17:34:39,802 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@6d23ea>
+2013-10-14 17:34:39,803 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [clob] overrides previous : org.hibernate.type.ClobType@150ed68>
+2013-10-14 17:34:39,803 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@150ed68>
+2013-10-14 17:34:39,805 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [blob] overrides previous : org.hibernate.type.BlobType@1279c8>
+2013-10-14 17:34:39,805 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1279c8>
+2013-10-14 17:34:39,807 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@f9659d>
+2013-10-14 17:34:39,886 WARN [net.sf.ehcache.config.ConfigurationFactory] - <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/zhang/.m2/repository/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar!/ehcache-failsafe.xml>
+2013-10-14 17:34:40,200 WARN [org.hibernate.id.UUIDHexGenerator] - <Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead>
+2013-10-14 17:34:40,815 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - <Not binding factory to JNDI, no JNDI name configured>
+2013-10-14 17:34:40,885 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <Running hbm2ddl schema update>
+2013-10-14 17:34:40,886 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <fetching database metadata>
+2013-10-14 17:34:40,890 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <updating schema>
+2013-10-14 17:34:40,931 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_REPLY>
+2013-10-14 17:34:40,931 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [content, id, user_name, last_modified, input_time, create_time, ref_reply_id, be_replied, author_id, topic_id]>
+2013-10-14 17:34:40,932 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkcf17e39e32ffe70b, fkcf17e39ea4f1a958]>
+2013-10-14 17:34:40,933 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkcf17e39e32ffe70b, fkcf17e39ea4f1a958, primary]>
+2013-10-14 17:34:40,959 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_SECTION>
+2013-10-14 17:34:40,959 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, company_id, topics, joins, input_time, clicks, admin_id, section_name]>
+2013-10-14 17:34:40,960 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk9cdfee99a1487ec7]>
+2013-10-14 17:34:40,960 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary, fk9cdfee99a1487ec7]>
+2013-10-14 17:34:40,986 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_TOPIC>
+2013-10-14 17:34:40,987 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [topic_body, last_reply_time, section_id, topic_title, id, user_name, topic_category, input_time, replies, clicks, delete_flag, author_id, created_time]>
+2013-10-14 17:34:40,988 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkcf389de334243e18, fkcf389de332ffe70b]>
+2013-10-14 17:34:40,988 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkcf389de334243e18, fkcf389de332ffe70b, primary]>
+2013-10-14 17:34:41,011 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.CAREER_TALK>
+2013-10-14 17:34:41,011 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [company_id, joins, school_name, source_from, url, career_time, id, career_talk_date, company_name, input_time, replies, clicks, place, topic_id]>
+2013-10-14 17:34:41,012 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk4f7a68cdcb6af809]>
+2013-10-14 17:34:41,013 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary, fk4f7a68cdcb6af809]>
+2013-10-14 17:34:41,036 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.COMPANY>
+2013-10-14 17:34:41,037 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [company_type, state, famous_company, section_id, state_time, id, company_name, input_time, company_rating, province, industry, company_scale, introduction]>
+2013-10-14 17:34:41,038 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,038 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:34:41,067 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.JOB>
+2013-10-14 17:34:41,068 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [img_url, table_form, company_id, joins, source_from, company_type, state, state_time, contact, url, id, company_name, input_time, job_name, description, replies, delete_flag, clicks, created_time, industry, place, topic_id, statetime]>
+2013-10-14 17:34:41,069 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk11f9dcb6af809]>
+2013-10-14 17:34:41,072 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fk11f9dcb6af809, primary]>
+2013-10-14 17:34:41,091 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.MAJOR>
+2013-10-14 17:34:41,091 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, input_time, major_type, major_name]>
+2013-10-14 17:34:41,092 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,092 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:34:41,113 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.PREFERENCE>
+2013-10-14 17:34:41,114 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, source_from, input_time, company_type, province, notify_type, industry]>
+2013-10-14 17:34:41,114 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,115 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:34:41,139 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.PRIVATE_LETTER>
+2013-10-14 17:34:41,139 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [to_user_id, content, id, title, from_user_id, from_user_name, to_user_name, created_time]>
+2013-10-14 17:34:41,140 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,140 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:34:41,168 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.USER>
+2013-10-14 17:34:41,169 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [img_type, user_gender, last_read_topic, source_from, school_name, preference_id, nickname, last_read_letter, user_email, id, last_read_campus_recruit, user_name, last_read_career_talk, last_read_reply, input_time, major_id, user_password, user_id, introduction]>
+2013-10-14 17:34:41,170 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk27e3cbba32e20b, fk27e3cb874bae49]>
+2013-10-14 17:34:41,173 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fk27e3cbba32e20b, primary, fk27e3cb874bae49]>
+2013-10-14 17:34:41,196 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.USER_BBS_SECTION>
+2013-10-14 17:34:41,196 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [section_id, user_id]>
+2013-10-14 17:34:41,197 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkc61dd825d246f4cb, fkc61dd82534243e18]>
+2013-10-14 17:34:41,197 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkc61dd825d246f4cb, primary, fkc61dd82534243e18]>
+2013-10-14 17:34:41,299 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.byrlist>
+2013-10-14 17:34:41,299 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [jobdetails, title, companyproperty, releasedate, pid, industry, insert_flag, url, city]>
+2013-10-14 17:34:41,300 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,300 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:34:41,324 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.dajielist>
+2013-10-14 17:34:41,325 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [form, companyproperty, state, pid, releasedate, isfresh, type, url, city, jobdetails, title, isfame, industry, imageurl, statetime]>
+2013-10-14 17:34:41,326 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,327 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:34:41,352 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.dajiexj>
+2013-10-14 17:34:41,353 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, time, title, school, local, date, insert_flag, url]>
+2013-10-14 17:34:41,353 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,354 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:34:41,375 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.qinghualist>
+2013-10-14 17:34:41,375 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [jobdetails, title, companyproperty, releasedate, pid, industry, insert_flag, url, city]>
+2013-10-14 17:34:41,376 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,376 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:34:41,402 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.hibernate_sequence>
+2013-10-14 17:34:41,402 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [next_val]>
+2013-10-14 17:34:41,403 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:34:41,403 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: []>
+2013-10-14 17:34:41,404 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <schema update complete>
+2013-10-14 17:34:41,422 INFO [org.hibernate.cache.UpdateTimestampsCache] - <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache>
+2013-10-14 17:34:41,449 WARN [org.hibernate.cache.EhCacheProvider] - <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.>
+2013-10-14 17:34:41,623 INFO [org.hibernate.cache.StandardQueryCache] - <starting query cache at region: org.hibernate.cache.StandardQueryCache>
+2013-10-14 17:34:41,625 WARN [org.hibernate.cache.EhCacheProvider] - <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.>
+2013-10-14 17:34:41,806 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - <Using DataSource [org.apache.commons.dbcp.BasicDataSource@63afa4] of Hibernate SessionFactory for HibernateTransactionManager>
+2013-10-14 17:34:42,053 INFO [org.compass.core.config.CompassConfiguration] - <Mapping class [class com.bupt.pcncad.domain.Company]>
+2013-10-14 17:34:42,070 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-10-14 17:34:42,400 INFO [org.compass.core.lucene.engine.analyzer.LuceneAnalyzerManager] - <Building analyzer [MMAnalyzer]>
+2013-10-14 17:34:42,505 INFO [org.compass.core.lucene.engine.highlighter.LuceneHighlighterManager] - <Building highlighter [default]>
+2013-10-14 17:34:42,585 INFO [org.compass.core.lucene.engine.optimizer.LuceneSearchEngineOptimizerManager] - <Starting scheduled optimizer [class org.compass.core.lucene.engine.optimizer.DefaultLuceneSearchEngineOptimizer] with period [10000ms]>
+2013-10-14 17:34:42,588 INFO [org.compass.core.lucene.engine.manager.DefaultLuceneSearchEngineIndexManager] - <Starting scheduled index manager with period [60000ms]>
+2013-10-14 17:34:42,590 INFO [org.compass.core.lucene.engine.manager.IndexHoldersCache] - <Starting scheduled refresh cache with period [5000ms]>
+2013-10-14 17:34:45,878 INFO [org.compass.core.impl.DefaultCompass] - <Closing Compass [compass]>
+2013-10-14 17:34:45,879 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@16dc861: startup date [Mon Oct 14 17:34:36 CST 2013]; root of context hierarchy>
+2013-10-14 17:34:45,883 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9b59a2: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-10-14 17:34:45,901 INFO [org.compass.core.impl.DefaultCompass] - <Closed Compass [compass]>
+2013-10-14 17:34:45,915 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Closing Hibernate SessionFactory>
+2013-10-14 17:34:45,916 INFO [org.hibernate.impl.SessionFactoryImpl] - <closing>
+2013-10-14 17:36:49,721 INFO [org.springframework.test.context.TestContextManager] - <@TestExecutionListeners is not present for class [class com.bupt.pcncad.TestDao]: using defaults.>
+2013-10-14 17:36:49,916 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext.xml]>
+2013-10-14 17:36:50,071 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-10-14 17:36:50,388 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [spring/applicationContext-db.xml]>
+2013-10-14 17:36:50,421 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'dataSource': replacing [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.apache.commons.dbcp.BasicDataSource]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:36:50,428 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'sessionFactory': replacing [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:36:50,436 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txManager': replacing [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.springframework.orm.hibernate3.HibernateTransactionManager]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:36:50,441 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'txAdvice': replacing [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Generic bean: class [org.springframework.transaction.interceptor.TransactionInterceptor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-10-14 17:36:50,447 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'brServiceOperation': replacing [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [org.springframework.aop.aspectj.AspectJExpressionPointcut]; scope=prototype; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]>
+2013-10-14 17:36:50,451 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'annotationConfiguration': replacing [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.annotations.config.CompassAnnotationsConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:36:50,455 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compass': replacing [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.spring.LocalCompassBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:36:50,463 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'hibernateGpsDevice': replacing [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.device.hibernate.dep.Hibernate3GpsDevice]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:36:50,470 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassGps': replacing [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.gps.impl.SingleCompassGps]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=start; destroyMethodName=stop; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:36:50,474 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Overriding bean definition for bean 'compassTemplate': replacing [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]] with [Generic bean: class [org.compass.core.CompassTemplate]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [spring/applicationContext-db.xml]]>
+2013-10-14 17:36:50,482 INFO [org.springframework.context.support.GenericApplicationContext] - <Refreshing org.springframework.context.support.GenericApplicationContext@383118: startup date [Mon Oct 14 17:36:50 CST 2013]; root of context hierarchy>
+2013-10-14 17:36:50,765 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-10-14 17:36:50,844 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1082823: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-10-14 17:36:51,540 INFO [org.hibernate.annotations.common.Version] - <Hibernate Commons Annotations 3.2.0.Final>
+2013-10-14 17:36:51,549 INFO [org.hibernate.cfg.Environment] - <Hibernate 3.6.9.Final>
+2013-10-14 17:36:51,553 INFO [org.hibernate.cfg.Environment] - <hibernate.properties not found>
+2013-10-14 17:36:51,558 INFO [org.hibernate.cfg.Environment] - <Bytecode provider name : javassist>
+2013-10-14 17:36:51,562 INFO [org.hibernate.cfg.Environment] - <using JDK 1.4 java.sql.Timestamp handling>
+2013-10-14 17:36:51,753 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSReply>
+2013-10-14 17:36:51,803 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSReply on table BBS_REPLY>
+2013-10-14 17:36:51,874 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSSection>
+2013-10-14 17:36:51,875 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSSection on table BBS_SECTION>
+2013-10-14 17:36:51,916 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.BBSTopic>
+2013-10-14 17:36:51,917 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.BBSTopic on table BBS_TOPIC>
+2013-10-14 17:36:51,927 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.CareerTalk>
+2013-10-14 17:36:51,927 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.CareerTalk on table CAREER_TALK>
+2013-10-14 17:36:51,932 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Company>
+2013-10-14 17:36:51,933 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Company on table COMPANY>
+2013-10-14 17:36:51,950 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Job>
+2013-10-14 17:36:51,952 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Job on table JOB>
+2013-10-14 17:36:51,959 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Major>
+2013-10-14 17:36:51,960 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Major on table MAJOR>
+2013-10-14 17:36:51,963 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Preference>
+2013-10-14 17:36:51,964 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Preference on table PREFERENCE>
+2013-10-14 17:36:51,971 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.PrivateLetter>
+2013-10-14 17:36:51,972 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.PrivateLetter on table PRIVATE_LETTER>
+2013-10-14 17:36:51,975 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.BYRSource>
+2013-10-14 17:36:51,976 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.BYRSource on table byrlist>
+2013-10-14 17:36:51,978 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.CTSource>
+2013-10-14 17:36:51,980 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.CTSource on table dajiexj>
+2013-10-14 17:36:51,984 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.DajieSource>
+2013-10-14 17:36:51,985 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.DajieSource on table dajielist>
+2013-10-14 17:36:51,990 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.source.ShuiMuBBSSource>
+2013-10-14 17:36:51,991 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.source.ShuiMuBBSSource on table qinghualist>
+2013-10-14 17:36:51,993 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.Source>
+2013-10-14 17:36:51,995 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.Source on table dajielist>
+2013-10-14 17:36:51,999 INFO [org.hibernate.cfg.AnnotationBinder] - <Binding entity from annotated class: com.bupt.pcncad.domain.User>
+2013-10-14 17:36:51,999 INFO [org.hibernate.cfg.annotations.EntityBinder] - <Bind entity com.bupt.pcncad.domain.User on table USER>
+2013-10-14 17:36:52,030 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.BBSTopic.replySet -> BBS_REPLY>
+2013-10-14 17:36:52,031 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.Major.userSet -> USER>
+2013-10-14 17:36:52,036 INFO [org.hibernate.cfg.annotations.CollectionBinder] - <Mapping collection: com.bupt.pcncad.domain.User.bbsReplySet -> BBS_REPLY>
+2013-10-14 17:36:52,047 INFO [org.hibernate.cfg.Configuration] - <Hibernate Validator not found: ignoring>
+2013-10-14 17:36:52,050 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Building new Hibernate SessionFactory>
+2013-10-14 17:36:52,058 INFO [org.hibernate.cfg.search.HibernateSearchEventListenerRegister] - <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.>
+2013-10-14 17:36:52,067 INFO [org.hibernate.connection.ConnectionProviderFactory] - <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider>
+2013-10-14 17:36:52,630 INFO [org.hibernate.dialect.Dialect] - <Using dialect: org.hibernate.dialect.MySQLDialect>
+2013-10-14 17:36:52,643 INFO [org.hibernate.engine.jdbc.JdbcSupportLoader] - <Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4>
+2013-10-14 17:36:52,643 INFO [org.hibernate.cfg.SettingsFactory] - <Database ->
+       name : MySQL
+    version : 5.1.61
+      major : 5
+      minor : 1>
+2013-10-14 17:36:52,644 INFO [org.hibernate.cfg.SettingsFactory] - <Driver ->
+       name : MySQL-AB JDBC Driver
+    version : mysql-connector-java-5.1.9 ( Revision: ${svn.Revision} )
+      major : 5
+      minor : 1>
+2013-10-14 17:36:52,647 INFO [org.hibernate.transaction.TransactionFactoryFactory] - <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory>
+2013-10-14 17:36:52,649 INFO [org.hibernate.transaction.TransactionManagerLookupFactory] - <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)>
+2013-10-14 17:36:52,650 INFO [org.hibernate.cfg.SettingsFactory] - <Automatic flush during beforeCompletion(): disabled>
+2013-10-14 17:36:52,652 INFO [org.hibernate.cfg.SettingsFactory] - <Automatic session close at end of transaction: disabled>
+2013-10-14 17:36:52,653 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC batch size: 50>
+2013-10-14 17:36:52,653 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC batch updates for versioned data: disabled>
+2013-10-14 17:36:52,655 INFO [org.hibernate.cfg.SettingsFactory] - <Scrollable result sets: enabled>
+2013-10-14 17:36:52,655 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC3 getGeneratedKeys(): enabled>
+2013-10-14 17:36:52,656 INFO [org.hibernate.cfg.SettingsFactory] - <JDBC result set fetch size: 50>
+2013-10-14 17:36:52,656 INFO [org.hibernate.cfg.SettingsFactory] - <Connection release mode: auto>
+2013-10-14 17:36:52,657 INFO [org.hibernate.cfg.SettingsFactory] - <Maximum outer join fetch depth: 2>
+2013-10-14 17:36:52,658 INFO [org.hibernate.cfg.SettingsFactory] - <Default batch fetch size: 1>
+2013-10-14 17:36:52,660 INFO [org.hibernate.cfg.SettingsFactory] - <Generate SQL with comments: disabled>
+2013-10-14 17:36:52,661 INFO [org.hibernate.cfg.SettingsFactory] - <Order SQL updates by primary key: disabled>
+2013-10-14 17:36:52,661 INFO [org.hibernate.cfg.SettingsFactory] - <Order SQL inserts for batching: disabled>
+2013-10-14 17:36:52,662 INFO [org.hibernate.cfg.SettingsFactory] - <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory>
+2013-10-14 17:36:52,665 INFO [org.hibernate.hql.ast.ASTQueryTranslatorFactory] - <Using ASTQueryTranslatorFactory>
+2013-10-14 17:36:52,665 INFO [org.hibernate.cfg.SettingsFactory] - <Query language substitutions: {}>
+2013-10-14 17:36:52,666 INFO [org.hibernate.cfg.SettingsFactory] - <JPA-QL strict compliance: disabled>
+2013-10-14 17:36:52,666 INFO [org.hibernate.cfg.SettingsFactory] - <Second-level cache: enabled>
+2013-10-14 17:36:52,667 INFO [org.hibernate.cfg.SettingsFactory] - <Query cache: enabled>
+2013-10-14 17:36:52,671 INFO [org.hibernate.cfg.SettingsFactory] - <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge>
+2013-10-14 17:36:52,675 INFO [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge] - <Cache provider: org.hibernate.cache.EhCacheProvider>
+2013-10-14 17:36:52,679 INFO [org.hibernate.cfg.SettingsFactory] - <Optimize cache for minimal puts: disabled>
+2013-10-14 17:36:52,680 INFO [org.hibernate.cfg.SettingsFactory] - <Structured second-level cache entries: disabled>
+2013-10-14 17:36:52,680 INFO [org.hibernate.cfg.SettingsFactory] - <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory>
+2013-10-14 17:36:52,687 INFO [org.hibernate.cfg.SettingsFactory] - <Statistics: disabled>
+2013-10-14 17:36:52,688 INFO [org.hibernate.cfg.SettingsFactory] - <Deleted entity synthetic identifier rollback: disabled>
+2013-10-14 17:36:52,688 INFO [org.hibernate.cfg.SettingsFactory] - <Default entity-mode: pojo>
+2013-10-14 17:36:52,689 INFO [org.hibernate.cfg.SettingsFactory] - <Named query checking : enabled>
+2013-10-14 17:36:52,689 INFO [org.hibernate.cfg.SettingsFactory] - <Check Nullability in Core (should be disabled when Bean Validation is on): disabled>
+2013-10-14 17:36:52,713 INFO [org.hibernate.impl.SessionFactoryImpl] - <building session factory>
+2013-10-14 17:36:52,722 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [materialized_blob] overrides previous : org.hibernate.type.MaterializedBlobType@1939100>
+2013-10-14 17:36:52,723 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [wrapper_characters_clob] overrides previous : org.hibernate.type.CharacterArrayClobType@114d662>
+2013-10-14 17:36:52,723 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [materialized_clob] overrides previous : org.hibernate.type.MaterializedClobType@106c6be>
+2013-10-14 17:36:52,727 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [blob] overrides previous : org.hibernate.type.BlobType@1e1e999>
+2013-10-14 17:36:52,728 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [java.sql.Blob] overrides previous : org.hibernate.type.BlobType@1e1e999>
+2013-10-14 17:36:52,729 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [characters_clob] overrides previous : org.hibernate.type.PrimitiveCharacterArrayClobType@af721d>
+2013-10-14 17:36:52,730 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [clob] overrides previous : org.hibernate.type.ClobType@6d06b0>
+2013-10-14 17:36:52,730 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [java.sql.Clob] overrides previous : org.hibernate.type.ClobType@6d06b0>
+2013-10-14 17:36:52,731 INFO [org.hibernate.type.BasicTypeRegistry] - <Type registration [wrapper_materialized_blob] overrides previous : org.hibernate.type.WrappedMaterializedBlobType@1d22ddb>
+2013-10-14 17:36:52,759 WARN [net.sf.ehcache.config.ConfigurationFactory] - <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/C:/Users/zhang/.m2/repository/net/sf/ehcache/ehcache-core/2.4.3/ehcache-core-2.4.3.jar!/ehcache-failsafe.xml>
+2013-10-14 17:36:52,914 WARN [org.hibernate.id.UUIDHexGenerator] - <Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead>
+2013-10-14 17:36:53,344 INFO [org.hibernate.impl.SessionFactoryObjectFactory] - <Not binding factory to JNDI, no JNDI name configured>
+2013-10-14 17:36:53,351 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <Running hbm2ddl schema update>
+2013-10-14 17:36:53,352 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <fetching database metadata>
+2013-10-14 17:36:53,355 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <updating schema>
+2013-10-14 17:36:53,392 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_REPLY>
+2013-10-14 17:36:53,392 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [content, id, user_name, last_modified, input_time, create_time, ref_reply_id, be_replied, author_id, topic_id]>
+2013-10-14 17:36:53,393 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkcf17e39e32ffe70b, fkcf17e39ea4f1a958]>
+2013-10-14 17:36:53,394 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkcf17e39e32ffe70b, fkcf17e39ea4f1a958, primary]>
+2013-10-14 17:36:53,418 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_SECTION>
+2013-10-14 17:36:53,419 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, company_id, topics, joins, input_time, clicks, admin_id, section_name]>
+2013-10-14 17:36:53,420 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk9cdfee99a1487ec7]>
+2013-10-14 17:36:53,420 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary, fk9cdfee99a1487ec7]>
+2013-10-14 17:36:53,445 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.BBS_TOPIC>
+2013-10-14 17:36:53,445 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [topic_body, last_reply_time, section_id, topic_title, id, user_name, topic_category, input_time, replies, clicks, delete_flag, author_id, created_time]>
+2013-10-14 17:36:53,446 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkcf389de334243e18, fkcf389de332ffe70b]>
+2013-10-14 17:36:53,447 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkcf389de334243e18, fkcf389de332ffe70b, primary]>
+2013-10-14 17:36:53,471 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.CAREER_TALK>
+2013-10-14 17:36:53,472 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [company_id, joins, school_name, source_from, url, career_time, id, career_talk_date, company_name, input_time, replies, clicks, place, topic_id]>
+2013-10-14 17:36:53,473 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk4f7a68cdcb6af809]>
+2013-10-14 17:36:53,474 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary, fk4f7a68cdcb6af809]>
+2013-10-14 17:36:53,497 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.COMPANY>
+2013-10-14 17:36:53,498 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [company_type, state, famous_company, section_id, state_time, id, company_name, input_time, company_rating, province, industry, company_scale, introduction]>
+2013-10-14 17:36:53,499 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,499 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:36:53,526 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.JOB>
+2013-10-14 17:36:53,527 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [img_url, table_form, company_id, joins, source_from, company_type, state, state_time, contact, url, id, company_name, input_time, job_name, description, replies, delete_flag, clicks, created_time, industry, place, topic_id, statetime]>
+2013-10-14 17:36:53,528 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk11f9dcb6af809]>
+2013-10-14 17:36:53,529 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fk11f9dcb6af809, primary]>
+2013-10-14 17:36:53,551 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.MAJOR>
+2013-10-14 17:36:53,552 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, input_time, major_type, major_name]>
+2013-10-14 17:36:53,553 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,553 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:36:53,578 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.PREFERENCE>
+2013-10-14 17:36:53,579 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, source_from, input_time, company_type, province, notify_type, industry]>
+2013-10-14 17:36:53,580 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,580 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:36:53,598 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.PRIVATE_LETTER>
+2013-10-14 17:36:53,599 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [to_user_id, content, id, title, from_user_id, from_user_name, to_user_name, created_time]>
+2013-10-14 17:36:53,600 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,600 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:36:53,622 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.USER>
+2013-10-14 17:36:53,623 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [img_type, user_gender, last_read_topic, source_from, school_name, preference_id, nickname, last_read_letter, user_email, id, last_read_campus_recruit, user_name, last_read_career_talk, last_read_reply, input_time, major_id, user_password, user_id, introduction]>
+2013-10-14 17:36:53,624 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fk27e3cbba32e20b, fk27e3cb874bae49]>
+2013-10-14 17:36:53,625 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fk27e3cbba32e20b, primary, fk27e3cb874bae49]>
+2013-10-14 17:36:53,645 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.USER_BBS_SECTION>
+2013-10-14 17:36:53,646 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [section_id, user_id]>
+2013-10-14 17:36:53,646 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: [fkc61dd825d246f4cb, fkc61dd82534243e18]>
+2013-10-14 17:36:53,647 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [fkc61dd825d246f4cb, primary, fkc61dd82534243e18]>
+2013-10-14 17:36:53,663 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.byrlist>
+2013-10-14 17:36:53,664 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [jobdetails, title, companyproperty, releasedate, pid, industry, insert_flag, url, city]>
+2013-10-14 17:36:53,665 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,665 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:36:53,688 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.dajielist>
+2013-10-14 17:36:53,688 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [form, companyproperty, state, pid, releasedate, isfresh, type, url, city, jobdetails, title, isfame, industry, imageurl, statetime]>
+2013-10-14 17:36:53,689 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,690 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:36:53,708 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.dajiexj>
+2013-10-14 17:36:53,709 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [id, time, title, school, local, date, insert_flag, url]>
+2013-10-14 17:36:53,710 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,710 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:36:53,726 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.qinghualist>
+2013-10-14 17:36:53,727 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [jobdetails, title, companyproperty, releasedate, pid, industry, insert_flag, url, city]>
+2013-10-14 17:36:53,728 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,729 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: [primary]>
+2013-10-14 17:36:53,752 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <table found: campus_recruit.hibernate_sequence>
+2013-10-14 17:36:53,753 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <columns: [next_val]>
+2013-10-14 17:36:53,753 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <foreign keys: []>
+2013-10-14 17:36:53,754 INFO [org.hibernate.tool.hbm2ddl.TableMetadata] - <indexes: []>
+2013-10-14 17:36:53,754 INFO [org.hibernate.tool.hbm2ddl.SchemaUpdate] - <schema update complete>
+2013-10-14 17:36:53,760 INFO [org.hibernate.cache.UpdateTimestampsCache] - <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache>
+2013-10-14 17:36:53,762 WARN [org.hibernate.cache.EhCacheProvider] - <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.>
+2013-10-14 17:36:53,895 INFO [org.hibernate.cache.StandardQueryCache] - <starting query cache at region: org.hibernate.cache.StandardQueryCache>
+2013-10-14 17:36:53,897 WARN [org.hibernate.cache.EhCacheProvider] - <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.>
+2013-10-14 17:36:54,032 INFO [org.springframework.orm.hibernate3.HibernateTransactionManager] - <Using DataSource [org.apache.commons.dbcp.BasicDataSource@17db660] of Hibernate SessionFactory for HibernateTransactionManager>
+2013-10-14 17:36:54,214 INFO [org.compass.core.config.CompassConfiguration] - <Mapping class [class com.bupt.pcncad.domain.Company]>
+2013-10-14 17:36:54,229 INFO [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer] - <Loading properties file from class path resource [config.properties]>
+2013-10-14 17:36:54,451 INFO [org.compass.core.lucene.engine.analyzer.LuceneAnalyzerManager] - <Building analyzer [MMAnalyzer]>
+2013-10-14 17:36:54,515 INFO [org.compass.core.lucene.engine.highlighter.LuceneHighlighterManager] - <Building highlighter [default]>
+2013-10-14 17:36:54,573 INFO [org.compass.core.lucene.engine.optimizer.LuceneSearchEngineOptimizerManager] - <Starting scheduled optimizer [class org.compass.core.lucene.engine.optimizer.DefaultLuceneSearchEngineOptimizer] with period [10000ms]>
+2013-10-14 17:36:54,576 INFO [org.compass.core.lucene.engine.manager.DefaultLuceneSearchEngineIndexManager] - <Starting scheduled index manager with period [60000ms]>
+2013-10-14 17:36:54,577 INFO [org.compass.core.lucene.engine.manager.IndexHoldersCache] - <Starting scheduled refresh cache with period [5000ms]>
+2013-10-14 17:36:57,721 INFO [org.springframework.context.support.GenericApplicationContext] - <Closing org.springframework.context.support.GenericApplicationContext@383118: startup date [Mon Oct 14 17:36:50 CST 2013]; root of context hierarchy>
+2013-10-14 17:36:57,722 INFO [org.compass.core.impl.DefaultCompass] - <Closing Compass [compass]>
+2013-10-14 17:36:57,723 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1082823: defining beans [dataSource,sessionFactory,txManager,txAdvice,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,brServiceOperation,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#0,annotationConfiguration,compass,hibernateGpsDevice,compassGps,compassTemplate,BBSServiceImpl,careerTalkServiceImpl,companyServiceImpl,noticeServiceImpl,recruitServiceImpl,companySearchServiceImpl,sourceServiceImpl,resourceOperationServiceImpl,userServiceImpl,careerTalkUtil,recruitUtil,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,BBSReplyDaoImpl,BBSSectionDaoImpl,BBSTopicDaoImpl,careerTalkDaoImpl,companyDaoImpl,CTSourceDaoImpl,majorDaoImpl,preferenceDaoImpl,privateLetterDaoImpl,recruitDaoImpl,BYRSourceDaoImpl,dajieSourceDaoImpl,shuiMuDaoImpl,userDaoImpl,org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,baseController,BBSController,careerTalkController,companyController,noticeController,recruitController,searchController,resourceOperationController,userController,org.springframework.aop.support.DefaultBeanFactoryPointcutAdvisor#1,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy>
+2013-10-14 17:36:57,725 INFO [org.compass.core.impl.DefaultCompass] - <Closed Compass [compass]>
+2013-10-14 17:36:57,738 INFO [org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean] - <Closing Hibernate SessionFactory>
+2013-10-14 17:36:57,739 INFO [org.hibernate.impl.SessionFactoryImpl] - <closing>
